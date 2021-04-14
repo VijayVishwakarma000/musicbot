@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.3.0",
     "opusscript": "0.0.8",
     "ytdl-core": "^4.5.0",
     "ytsearcher": "^1.2.4"
