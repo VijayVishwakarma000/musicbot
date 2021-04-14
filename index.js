@@ -40,9 +40,14 @@ client.on("message", async (message) => {
         ).slice(0, 10).join("\n"));
     }
 
+<<<<<<< HEAD
     if ([`3d`, `bassboost`, `echo`, `karaoke`, `nightcore`, `vaporwave`].includes(command)) {
         let filter = distube.setFilter(message, command);
         message.channel.send("Current queue filter: " + (filter || "Off"));
+=======
+    if(cmd === 'play'){
+        exec(msg,serverqueue)
+>>>>>>> 00723cc1b11a8dcb202479d03dd056a97b920695
     }
 });
 
@@ -75,4 +80,15 @@ client.on("message", async (message) => {
 //         message.channel.send("An error encountered: " + e);
 //     });
 
+<<<<<<< HEAD
 client.login(config.token);
+=======
+        }
+        if(!serverqueue){
+            return msg.channel.send('There is nothing to skip')
+            serverqueue.connection.dispatch.end()
+        }
+    }
+})
+bot.login(token)
+>>>>>>> 00723cc1b11a8dcb202479d03dd056a97b920695
