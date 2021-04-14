@@ -33,7 +33,7 @@ bot.on('message', async msg=>{
     const args = msg.content.slice(prefix.length).trim().split(/ +/g)
     const cmd = args.shift().toLowerCase()
 
-    if(cmd === 'sing'){
+    if(cmd === 'play'){
         exec(msg,serverqueue)
     }
 
